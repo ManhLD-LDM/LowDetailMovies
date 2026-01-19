@@ -1,0 +1,10 @@
+# Cloudflare Tunnel Configuration
+# Replace with your own tunnel ID and credentials path
+
+tunnel: YOUR_TUNNEL_UUID_HERE
+credentials-file: /path/to/.cloudflared/YOUR_TUNNEL_UUID.json
+
+ingress:
+  - hostname: your-domain.example.com
+    service: http://localhost:3000
+  - service: http_status:404
