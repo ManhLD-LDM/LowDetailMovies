@@ -154,7 +154,7 @@ MovieWeb/
 
 ### Genres
 - `GET /api/genres` - Get all genres
-- 
+
 ### Video Sources
 
 You can use:
