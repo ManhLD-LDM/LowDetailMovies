@@ -71,7 +71,6 @@ MovieWeb/
 3. Environment variables (`.env` file đã được tạo sẵn):
    ```
    PORT=5000
-   MONGODB_URI=mongodb+srv://wmirrors4582:lol123456@cluster0.zktuk2j.mongodb.net/movieweb
    JWT_SECRET=your_jwt_secret_key_change_this_in_production_12345
    JWT_EXPIRE=7d
    NODE_ENV=development
@@ -155,22 +154,6 @@ MovieWeb/
 
 ### Genres
 - `GET /api/genres` - Get all genres
-
-## 📺 Adding Your Own Content
-
-### Adding Movies
-
-1. Access H2 Console: `http://localhost:8080/h2-console`
-2. Connect with:
-   - JDBC URL: `jdbc:h2:mem:moviedb`
-   - Username: `sa`
-   - Password: (empty)
-
-3. Insert movie:
-   ```sql
-   INSERT INTO movies (title, original_title, description, poster_url, backdrop_url, video_url, release_year, duration, rating, type, status, view_count, created_at, updated_at)
-   VALUES ('Movie Title', 'Original Title', 'Description...', 'poster.jpg', 'backdrop.jpg', 'http://your-video-url.mp4', 2024, 120, 8.5, 'MOVIE', 'COMPLETED', 0, NOW(), NOW());
-   ```
 
 ### Video Sources
 
